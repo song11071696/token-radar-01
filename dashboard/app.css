@@ -110,6 +110,16 @@ td.name .slug { font-family: var(--mono); font-size: 11px; color: var(--faint); 
 .up { color: var(--accent); }
 .down { color: var(--red); }
 .flat { color: var(--muted); }
+.verdict {
+  display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .06em;
+  border-radius: 4px; padding: 2px 8px; white-space: nowrap;
+}
+.verdict.farm { background: var(--accent-dim); color: var(--accent); }
+.verdict.thin { background: var(--amber-dim); color: var(--amber); }
+.verdict.skip { background: var(--panel2); color: var(--muted); border: 1px solid var(--line2); }
+.range { font-family: var(--mono); font-size: 11px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+.verdict-line { display: flex; align-items: baseline; gap: 10px; margin: 10px 0 12px; }
+.verdict-note { font-size: 13px; color: var(--muted); }
 .bar { position: relative; height: 6px; background: var(--line); border-radius: 3px; margin-top: 4px; min-width: 90px; }
 .bar > i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--accent); border-radius: 3px; }
 tr.top3 .bar > i { background: var(--amber); }
